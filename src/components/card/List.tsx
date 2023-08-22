@@ -1,9 +1,9 @@
 import React from "react";
 import { FlatList } from "react-native";
 
+import { useAppDispatch } from "../../rtk/hooks";
 import Item from "./Item";
 import { data } from "./data";
-import { useAppDispatch } from "../../app/hooks";
 
 const Card: React.FC = () => {
   const dispatch = useAppDispatch();

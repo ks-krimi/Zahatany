@@ -1,3 +1,4 @@
+import { MaterialIcons } from "@expo/vector-icons";
 import React from "react";
 import {
   FlatList,
@@ -6,11 +7,10 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { MaterialIcons } from "@expo/vector-icons";
 
-import { Category } from "./data";
-import { AppDispatch } from "../../app/store";
 import { getPoints } from "../../features/point/pointSlice";
+import { AppDispatch } from "../../rtk/store";
+import { Category } from "./data";
 
 const Item = (item: Category, dispatch: AppDispatch) => {
   return (

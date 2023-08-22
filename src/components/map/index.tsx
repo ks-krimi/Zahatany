@@ -14,8 +14,8 @@ import { Feature, GeoJsonProperties, Point } from "geojson";
 import React, { useEffect, useRef, useState } from "react";
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
 
-import { useAppDispatch, useAppSelector } from "../../app/hooks";
 import { getPoints } from "../../features/point/pointSlice";
+import { useAppDispatch, useAppSelector } from "../../rtk/hooks";
 import Card from "../card/List";
 
 Mapbox.setAccessToken(process.env.EXPO_PUBLIC_RNMAPBOX_PUB_KEY);
