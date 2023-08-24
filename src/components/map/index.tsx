@@ -48,13 +48,6 @@ const Map: React.FC = () => {
   return (
     <>
       <View style={styles.container}>
-        {isLoading && (
-          <ActivityIndicator
-            style={{ position: "absolute", top: 0 }}
-            size="large"
-            color="#0000ff"
-          />
-        )}
         <MapView
           pitchEnabled
           projection="globe"
@@ -140,7 +133,7 @@ const Map: React.FC = () => {
             </PointAnnotation>
           )}
         </MapView>
-        <Card />
+        {/* <Card /> */}
       </View>
     </>
   );
